@@ -75,6 +75,7 @@ The ```line_profiler``` needs a decorated function, therefore we need to put all
 # Program to multiply two matrices using nested loops
 import random
 
+@profile
 def main(N):
     # NxN matrix
     X = []
@@ -107,7 +108,7 @@ if __name__ == '__main__':
     main(N)
 ```
 
-Running this script with ```kernprof -l -v python matmult.py``` gives:
+Running this script with ```kernprof -l -v python matmult_profile.py``` gives:
 
 ```bash
 Wrote profile results to matmult.py.lprof
