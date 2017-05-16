@@ -64,7 +64,7 @@ Investigate buggy code using the *pdb* or *ipdb* debugger. Have a look at slides
 #### a. Find all the bugs in the dicegame
 This debugging example has been taken from [https://github.com/spiside/pdb-tutorial](https://github.com/spiside/pdb-tutorial). There you can find the official solution from the author of the dicegame. 
 
-I've also provided my solution with annotations to all the fixes I made. You can find it in ```dicegame``` (in this repository).
+I've also provided my solution with annotations to all the fixes I made. You can find it in [dicegame](./dicegame) (in this repository).
 
 ## 3. Profiling
 I decided to use the ```line_profiler``` via the command line, which I installed using ```pip install --user line_profiler```. 
