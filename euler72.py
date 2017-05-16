@@ -59,7 +59,7 @@ def fast_phi(n,primes):
     return phi
 
 primes = gen_primes(1000)
-m = 1000000
+m = 10000
 #m = 8
 fraq = 0
 for i in range(2,m+1):
