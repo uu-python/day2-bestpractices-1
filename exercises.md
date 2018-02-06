@@ -58,5 +58,3 @@ In which line(s) of the script would you start optimizing for speed? Which line(
 
 #### c. Improve the performance of the ```matmult.py``` script
 What is the best performance that you achieved with N=250?
-
-> Think about what to do as your coding project. Do you already have an idea? If not, come and talk to us!
