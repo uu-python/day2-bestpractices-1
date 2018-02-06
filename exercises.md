@@ -2,7 +2,9 @@
 Organising, debugging and profiling Python code
 
 ## 1. Creating a Python package
-Following the slides 20/21 from this morning's session, we will create an **animals** package.
+Following the slides 19/20 from this morning's session, we will create an **animals** package.
+
+> Please note that with Python 3, implicit relative imports are no longer supported [https://www.python.org/dev/peps/pep-0328/](https://www.python.org/dev/peps/pep-0328/)
 
 #### a. Create a directory for package
 
