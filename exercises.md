@@ -1,4 +1,4 @@
-# Exercises: Best practices I
+# Exercises for Day 2
 Organising, debugging and profiling Python code
 
 ## 1. Creating a Python package
