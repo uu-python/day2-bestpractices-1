@@ -65,4 +65,4 @@ fraq = 0
 for i in range(2,m+1):
     fraq += fast_phi(i,primes)
 
-print fraq
+print(fraq)
