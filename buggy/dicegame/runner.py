@@ -33,7 +33,6 @@ class GameRunner:
             for die in runner.dice:
                 print(die.show())
 
-            print(runner.answer())
             guess = input("Sigh. What is your guess?: ")
             guess = int(guess)
             
