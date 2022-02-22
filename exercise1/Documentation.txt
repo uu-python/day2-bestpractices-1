@@ -1,0 +1,10 @@
+The animals module is structured such that it has two basic modules "mammals_old" and "birds_old", in the previous file organization,
+and it also has submodules "dangerous" and "harmless", each containing "mammals", "birds" and "fish" files. 
+Each file has its own class.
+The "__init__" files are arranged such that you can import the "Mammals" and "Bird" classes directly from the animals module, 
+or you can import the whole animals module and call its submodules like "animals.dangerous.Fish()".
+
+This way both the old and new testing files can be used:
+"test_animals.py"
+and
+"test_animals_final.py"
