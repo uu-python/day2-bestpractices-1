@@ -1,0 +1,7 @@
+Your boss has given you the following project to fix for a client. It's supposed to be a simple dice
+game where the object of the game is to correctly add up the values of the dice for 6 consecutive turns.
+
+The issue is that a former programmer worked on it and didn't know how to debug effectively. It's now up to
+you to fix the errors and finally make the game playable.
+
+To play the game you must run the main.py file.

@@ -1,0 +1,19 @@
+Bugs found in the original code + ones introduced by fixing other bugs:
+1. runner.py(18)
+    The ammount to be added to the total should be the dice value, not just +1.
+2. runner.py(27)
+    Everytime there is a new round a new runner is created, so all information from previous rounds is lost. This line needs to be moved outside the loop.
+3. runner.py(31)
+    The dice need to be generated again every round. Since we moved the line that reset everything out of the loop we need to create a new function that resets the dice and only that.
+4. runner.py(39)
+    A win was being counted everytime the player got a sum right. It should only be counted after 6 consecutive wins, so I moved the line to inside the c==6 conditional.
+5. runner.py(55)
+    The prompt asking wether the player would like to play again should only be used in case of a failure or of a win condition, not everytime the player gets a combination right. Added continue expression inside correct answer branch, with conditional testing whether the player has won (c==6)
+6. runner.py(50)
+    There should be a reset c=0 inside this conditional, in case the player wants to try again. Otherwise the player can never win again.
+7. utils.py(1)
+    This class is absolutely useless. instead of calling this exception we can just break out of the loop in the run method.
+8. runner.py(48)
+    Round should increase in case of a correct guess only, moved it inside the proper branch.
+9. runner.py(47)
+    Adjust the print statement with wins and losses to until after it is updated.
