@@ -13,4 +13,6 @@ ANS: The gen_primes function is called only once and it executes rather quickly 
 c. Improve the performance of the matmult.py script
 What is the best performance that you achieved with N=250?
 
-ANS: 
+ANS: Although I knew the line the nedded most improvement was line 27, I didn't really know how to improve it. I found this (https://stackoverflow.com/a/61583971/10172674) solution and tried to implement it. I saw a significant increase in perfornamce, with the run time going from 3.954 s to 2.716 s. This solution was used the python native sum() method. I then decided to see to try a solution closer to the original program, with only the only changes being the sum method instead of the most internal loop and the evaluation of the length of Y outside all loops. To my suprise this method performed the best, **with a runtime of 2.294 seconds**.
+
+By suppressing the print statements at the end I got an even better result: **2.271 seconds**.

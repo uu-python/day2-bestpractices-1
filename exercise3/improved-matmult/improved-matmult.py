@@ -1,3 +1,5 @@
+# By seeing how powerful sum() can be I decided to test how it would perform in a setup closer to the initial one, with the result matrix being initizalized outside the loops
+
 # Program to multiply two matrices using nested loops
 import random
 
@@ -18,35 +20,13 @@ result = []
 for i in range(N):
     result.append([0] * (N+1))
 
-    
-# lX, lY0, lY = len(X), len(Y[0]), len(Y)
-# # iterate through rows of X
-# for i in range(lX):
-#     # iterate through columns of Y
-#     xi = X[i]
-#     for j in range(lY0):
-#         # iterate through rows of Y
-#         for k in range(lY):
-#             result[i][j] += xi[k] * Y[k][j]
-
-# lY0, lY = len(Y[0]), len(Y)
-# # iterate through rows of X
-# for i, xi in enumerate(X):
-#     # iterate through columns of Y
-#     for j in range(lY0):
-#         # iterate through rows of Y
-#         for k, yk in enumerate(Y):
-#             result[i][j] += xi[k] * yk[j]
-
-lX, lY0, lY = len(X), len(Y[0]), len(Y)
+lenY = len(Y) # Save this value to avoid repetition
 # iterate through rows of X
-for i in range(lX):
+for i in range(len(X)):
     # iterate through columns of Y
-    xi = X[i]
-    for j in range(lY0):
-        # iterate through rows of Y
-        for k in range(lY):
-            result[i][j] += xi[k] * Y[k][j]
+    for j in range(len(Y[0])):
+        # Instead of iterating again we use the sum method, which is faster
+        result[i][j] = sum([X[i][k] * Y[k][j] for k in range(len(Y))])
 
-#for r in result:
-    #print(r)
+for r in result:
+    print(r)

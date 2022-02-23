@@ -1,4 +1,4 @@
-         849954 function calls (849927 primitive calls) in 2.271 seconds
+         1287280 function calls (1287253 primitive calls) in 2.728 seconds
 
    Ordered by: standard name
 
@@ -61,16 +61,20 @@
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:969(get_data)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:99(_path_isfile)
         1    0.000    0.000    0.000    0.000 bisect.py:1(<module>)
-      250    0.014    0.000    0.082    0.000 improved-matmult.py:11(<listcomp>)
-      250    0.014    0.000    0.082    0.000 improved-matmult.py:16(<listcomp>)
-    62750    1.893    0.000    1.893    0.000 improved-matmult.py:29(<listcomp>)
-        1    0.119    0.119    2.271    2.271 improved-matmult.py:4(<module>)
+      250    0.013    0.000    0.078    0.000 motivation-matmult.py:12(<listcomp>)
+      250    0.014    0.000    0.080    0.000 motivation-matmult.py:17(<listcomp>)
+    62500    0.131    0.000    1.443    0.000 motivation-matmult.py:26(multiplicationLineColumn)
+    62500    1.212    0.000    1.212    0.000 motivation-matmult.py:32(<listcomp>)
+    62500    0.040    0.000    1.010    0.000 motivation-matmult.py:37(getColumn)
+    62500    0.967    0.000    0.967    0.000 motivation-matmult.py:39(<listcomp>)
+    62500    0.006    0.000    0.006    0.000 motivation-matmult.py:42(getLine)
+        1    0.106    0.106    2.728    2.728 motivation-matmult.py:5(<module>)
         1    0.000    0.000    0.001    0.001 random.py:1(<module>)
         1    0.000    0.000    0.000    0.000 random.py:103(__init_subclass__)
         1    0.000    0.000    0.000    0.000 random.py:123(seed)
-   125250    0.055    0.000    0.106    0.000 random.py:200(randrange)
-   125250    0.031    0.000    0.136    0.000 random.py:244(randint)
-   125250    0.038    0.000    0.050    0.000 random.py:250(_randbelow_with_getrandbits)
+   125250    0.053    0.000    0.104    0.000 random.py:200(randrange)
+   125250    0.029    0.000    0.132    0.000 random.py:244(randint)
+   125250    0.037    0.000    0.050    0.000 random.py:250(_randbelow_with_getrandbits)
         1    0.000    0.000    0.000    0.000 random.py:709(SystemRandom)
         1    0.000    0.000    0.000    0.000 random.py:78(Random)
         1    0.000    0.000    0.000    0.000 random.py:94(__init__)
@@ -84,12 +88,12 @@
        12    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
        12    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
         2    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
-      3/1    0.000    0.000    2.271    2.271 {built-in method builtins.exec}
+      3/1    0.000    0.000    2.728    2.728 {built-in method builtins.exec}
        28    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
        29    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
        15    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
-    63014    0.003    0.000    0.003    0.000 {built-in method builtins.len}
-    62750    0.089    0.000    0.089    0.000 {built-in method builtins.sum}
+   187763    0.008    0.000    0.008    0.000 {built-in method builtins.len}
+    62500    0.093    0.000    0.093    0.000 {built-in method builtins.sum}
         6    0.000    0.000    0.000    0.000 {built-in method from_bytes}
         2    0.000    0.000    0.000    0.000 {built-in method io.open_code}
         2    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
@@ -99,13 +103,13 @@
         6    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
         2    0.000    0.000    0.000    0.000 {built-in method nt.getcwd}
        12    0.000    0.000    0.000    0.000 {built-in method nt.stat}
-        1    0.000    0.000    0.000    0.000 {function Random.seed at 0x000002B478DA2DC0}
-      750    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {function Random.seed at 0x00000235A59D6040}
+    63250    0.004    0.000    0.004    0.000 {method 'append' of 'list' objects}
    125250    0.006    0.000    0.006    0.000 {method 'bit_length' of 'int' objects}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
         2    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
        12    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
-   158425    0.007    0.000    0.007    0.000 {method 'getrandbits' of '_random.Random' objects}
+   159002    0.007    0.000    0.007    0.000 {method 'getrandbits' of '_random.Random' objects}
        44    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
         6    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
         2    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
