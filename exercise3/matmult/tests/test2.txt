@@ -1,0 +1,17 @@
+145
+40585
+         33888838 function calls (6888883 primitive calls) in 11.905 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        4    0.000    0.000    0.000    0.000 cp1252.py:18(encode)
+        1    0.295    0.295   11.905   11.905 test.py:4(<module>)
+32888835/5888880    8.917    0.000    8.917    0.000 test.py:4(fact)
+   999990    2.693    0.000   11.610    0.000 test.py:6(is_curious)
+        4    0.000    0.000    0.000    0.000 {built-in method _codecs.charmap_encode}
+        1    0.000    0.000   11.905   11.905 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

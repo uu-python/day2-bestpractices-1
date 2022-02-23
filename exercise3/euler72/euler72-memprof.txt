@@ -1,0 +1,58 @@
+30397485.0
+Filename: euler72.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     4   41.031 MiB   41.031 MiB           1   @profile
+     5                                         def gen_primes(n):
+     6   41.031 MiB    0.000 MiB           1       l = range(2,n)
+     7   41.031 MiB    0.000 MiB           1       primes = []
+     8   41.164 MiB    0.000 MiB         999       for j in range(0,len(l)):
+     9   41.164 MiB    0.000 MiB         998           p = True
+    10   41.164 MiB    0.000 MiB        2968           for d in primes:
+    11   41.164 MiB    0.000 MiB        2967               if(d > sqrt(l[j])):
+    12   41.164 MiB    0.000 MiB         167                   break
+    13   41.164 MiB    0.000 MiB        2800               if(l[j] % d == 0):
+    14   41.164 MiB    0.000 MiB         830                   p = False
+    15   41.164 MiB    0.000 MiB         830                   break;
+    16   41.164 MiB    0.000 MiB         998           if(p):
+    17   41.164 MiB    0.133 MiB         168               primes.append(l[j])
+    18                                         
+    19   41.164 MiB    0.000 MiB           1       return primes
+
+
+Filename: euler72.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+    21   41.176 MiB 411716.625 MiB        9999   @profile
+    22                                         def factorize(n,primes):
+    23   41.176 MiB    0.000 MiB        9999       factors = []
+    24   41.176 MiB    0.000 MiB        9999       init_n = n
+    25   41.176 MiB    0.000 MiB       96347       for p in primes:
+    26   41.176 MiB    0.004 MiB      118736           while(n%p == 0):
+    27   41.176 MiB    0.000 MiB       22389               n = n/p
+    28   41.176 MiB    0.000 MiB       22389               factors.append(p)
+    29   41.176 MiB    0.000 MiB       96347           if(p > sqrt(n)):
+    30   41.176 MiB    0.000 MiB        9999               break
+    31   41.176 MiB    0.000 MiB        9999       if(n > 1):
+    32   41.176 MiB    0.000 MiB        9596           factors.append(n)
+    33   41.176 MiB    0.000 MiB        9999       return factors
+
+
+Filename: euler72.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+    50   41.176 MiB   41.172 MiB        9999   @profile
+    51                                         def fast_phi(n,primes):
+    52   41.176 MiB 411716.629 MiB        9999       factors = factorize(n,primes)
+    53   41.176 MiB    0.000 MiB        9999       phi = factors[0]-1
+    54   41.176 MiB    0.000 MiB       31985       for i in range(1,len(factors)):
+    55   41.176 MiB    0.000 MiB       21986           if(factors[i] == factors[i-1]):
+    56   41.176 MiB    0.000 MiB        7685               phi *= (factors[i]-1)*(factors[i])/(factors[i]-1)
+    57                                                 else:
+    58   41.176 MiB    0.000 MiB       14301               phi *= (factors[i]-1)
+    59   41.176 MiB    0.000 MiB        9999       return phi
+
+

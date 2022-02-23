@@ -1,0 +1,10 @@
+Filename: mem-test.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     3   52.016 MiB   52.016 MiB           1   @profile
+     4                                         def test():
+     5   52.094 MiB    0.078 MiB           1       x = np.ones(10000)
+     6   52.168 MiB    0.074 MiB           1       y = x**2
+
+
