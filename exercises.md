@@ -49,7 +49,7 @@ Clone this repo (if you have not already done so), go to ```buggy```  and run th
 Ask your neighbour to introduce more bugs into the above (or any other) code examples and try to find the bug using the debugger. 
 
 ## 3. Profiling
-In this section, you should get more familiar with code profiling, in particular with the tools ```cProfile```, ```line_profiler```. Have a look at slides from this morning's session to understand what they are doing and when you should use them. Try out profiling both from the command line and using interactive python (e.g. jupyter notebook). If you get ```Command not found``` when running kernprof try searching for it in `~/.local/bin/kernprof`. Alternatively install it using Anaconda/conda (e.g. `conda install line_profiler`).
+In this section, you should get more familiar with code profiling, in particular with the tools ```cProfile```, ```line_profiler``` and ```scalene```. Have a look at slides from this morning's session to understand what they are doing and when you should use them. Try out profiling both from the command line and using interactive python (e.g. jupyter notebook). If you get ```Command not found``` when running kernprof try searching for it in `~/.local/bin/kernprof`. Alternatively install it using Anaconda/conda (e.g. `conda install line_profiler`).
 
 #### a. Investigate the performance of the ```matmult.py``` script
 In which line(s) of the script would you start optimizing for speed?
