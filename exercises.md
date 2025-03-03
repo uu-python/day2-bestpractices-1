@@ -39,6 +39,8 @@ dangerous_fish = animals.dangerous.Fish()
 dangerous_fish.printMembers()
 ```
 
+#### g. Run ```ruff``` on the files of your package
+
 ## 2. Debugging
 Investigate buggy code using the *pdb* or *ipdb* debugger. Have a look at slides of this mornings's session for help.
 
